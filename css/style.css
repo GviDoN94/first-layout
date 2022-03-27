@@ -1,0 +1,309 @@
+@font-face {
+  font-family: 'RobotoBold';
+  src: url('RobotoBold.eot');
+  src: local('Roboto Bold'), local('RobotoBold'),
+      url('/fonts/RobotoBold.woff2') format('woff2'),
+      url('/fonts/RobotoBold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'RobotoRegular';
+  src: url('RobotoRegular.eot');
+  src: local('Roboto Regular'), local('RobotoRegular'),
+      url('/fonts/RobotoRegular.woff2') format('woff2'),
+      url('/fonts/RobotoRegular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: Arial, Verdana, sans-serif;
+}
+
+.main-content {
+  display: flex;
+
+  flex-direction: column;
+
+  align-items: center;
+
+  justify-content: center;
+
+  min-height: 100vh;
+
+  color: #fff;
+
+  background-color: #070217;
+}
+
+.logo {
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+.menu {
+  margin-bottom: 50px;
+}
+
+.link {
+  display: inline-block;
+  padding: 24px 49px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #3f2aff;
+}
+
+.link:not(:last-child) {
+  margin-right: 25px;
+}
+
+.link-download {
+  padding-left: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  color: #3f2aff;
+  background-image: url("/img/download.png");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.container {
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 1170px;
+}
+
+.title {
+  margin: 0 0 40px;
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 60px;
+  color: #333;
+}
+
+.paragraph {
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 872px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+  color: #333;
+}
+
+.paragraph-blue {
+  max-width: 100%;
+  padding: 50px 95px;
+  border-radius: 20px;
+  font-weight: 700;
+  font-size: 30px;
+  color: #fff;
+  background-color: #3f2aff;
+}
+
+.container-grey {
+  padding: 30px;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+  background-position: right center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.background-image-first {
+  background-image: url("/img/decorate-1.png");
+}
+
+.background-image-last {
+  background-image: url("/img/decorate-2.png");
+}
+
+.container-grey:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.container-grey .paragraph:last-child {
+  margin: 0;
+}
+
+.container-grey .paragraph {
+  margin-bottom: 10px;
+  max-width: 692px;
+}
+
+.title-level-2,
+.title-level-3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 40px;
+  line-height: 46px;
+  color: #333;
+}
+
+.title-level-3 {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 34px;
+  color: #333;
+}
+
+.list {
+  margin: 0;
+  padding-left: 15px;
+}
+
+.element-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.element-list::marker {
+  color: #3f2aff;
+}
+
+.link-list {
+  border-bottom: 1px solid #3f2aff;
+  font-size: 20px;
+  color: #3f2aff;
+}
+
+.img {
+  margin-bottom: 40px;
+}
+
+.figure {
+  display: inline-block;
+  margin: 0;
+  margin-bottom: 40px;
+  max-width: 872px;
+  font-size: 0;
+}
+
+.figcaption {
+  padding: 19px 0;
+  border: 1px solid #b6b6b6;
+  border-top: none;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+
+.container-modules {
+  margin: 0 auto;
+  padding: 50px 0;
+  max-width: 1170px;
+}
+
+.logo-modules {
+  display: block;
+  margin-bottom: 25px;
+}
+
+.link-back {
+  display: block;
+  margin-bottom: 25px;
+  padding-left: 52px;
+  font: 20px / 23px RobotoRegular;
+  color: #3f2aff;
+  background-image: url("/img/Arrow.svg");
+  background-position: left center;
+  background-repeat: no-repeat;
+}
+
+.title-modules {
+  margin: 0;
+  margin-bottom: 50px;
+  font: 60px / 69px RobotoBold, Arial, Verdana, sans-serif;
+  color: #3f2aff;
+}
+
+.card-list {
+  margin: 0;
+  margin-bottom: 50px;
+  padding: 0;
+  font-size: 0;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  vertical-align: top;
+  padding: 205px 25px 25px;
+  min-width: 572px;
+  min-height: 505px;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 14px;
+  box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.1);
+}
+
+.card-1 {
+  margin: 0 25px 25px 0;
+  background-image: url("/img/card-1.png");
+}
+.card-2 {
+  margin-bottom: 25px;
+  background-image: url("/img/card-2.png");
+}
+.card-3 {
+  margin-right: 25px;
+  background-image: url("/img/card-3.png");
+}
+.card-4 {
+  background-image: url("/img/card-4.png");
+}
+
+.card-title {
+  margin: 0;
+  margin-bottom: 2px;
+  font: 40px / 46px RobotoBold, Arial, Verdana, sans-serif;
+  color: #3f2aff;
+}
+
+.lessons-list {
+  padding: 0;
+  font: 20px / 165% RobotoRegular, Arial, Verdana, sans-serif;
+  color: #333;
+  list-style: none;
+}
+
+.card-number {
+  position: absolute;
+  right: 25px;
+  bottom: 25px;
+  font: 40px / 46px RobotoRegular, Arial, Verdana, sans-serif;
+  text-align: right;
+  color: #eaeaea;
+}
+
+.show-more {
+  display: block;
+  margin: 0 auto;
+  padding: 25px 76px;
+  max-width: 274px;
+  outline: 2px solid #3f2aff;
+  font: 18px / 21px RobotoBold, Arial, Verdana, sans-serif;
+  text-align: center;
+  color: #3f2aff;
+}
