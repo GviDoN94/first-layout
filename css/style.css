@@ -54,7 +54,7 @@ body {
 
   color: #fff;
 
-  background-color: #070217;
+  background: linear-gradient(128deg, #3f268f, #b417b4, #ac2a2a);
 }
 
 .logo {
